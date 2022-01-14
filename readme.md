@@ -12,11 +12,11 @@ sudo mv ./kind /usr/local/bin/
 brew install kind
 ```
 
-
 # Basic kind command 
 ```
 kind create cluster
 kind create cluster --name <cluster-name> --image <kindest/node:v1.17.5>
+kind create cluster --config=config.yml
 kind get clusters
 kind delete cluster
 kind delete cluster --name <cluster-name>
@@ -25,15 +25,10 @@ kind delete cluster --name <cluster-name>
 # Basic kubectl command 
 ```
 kubectl cluster-info --context kind-kind
+kubectl get namespace
 kubectl get nodes
 kubectl get pods
 ```
-
-
-
-
-
-
 
 # Reference:
 https://kind.sigs.k8s.io/docs/user/quick-start/
