@@ -23,3 +23,6 @@ kubectl describe role pod-reader
 ```
 kubectl delete role pod-reader
 ```
+
+## Reference
+https://www.bogotobogo.com/DevOps/Docker/Docker-Kubernetes-RBAC.php#:~:text=The%20RBAC%20mechanism%20enables%20us,specific%20namespace%20of%20our%20cluster.

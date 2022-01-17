@@ -27,7 +27,12 @@ kind delete cluster --name <cluster-name>
 kubectl cluster-info --context kind-kind
 kubectl get namespace
 kubectl get nodes
+kubectl get deployment
 kubectl get pods
+kubectl get pods -o wide   
+kubectl get pods -o json  
+kubectl get pods -o yaml
+kubectl describe pod my-pod
 ```
 
 # Reference:

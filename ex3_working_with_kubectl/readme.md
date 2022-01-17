@@ -1,5 +1,7 @@
 ## Create cluster with the config.yml
+```
 kind create cluster --config=config.yml
+```
 
 ## Create a pod by config yml
 ```
@@ -10,7 +12,7 @@ kubectl apply -f pod.yml
 ```
 kubectl get pods -o wide   
 kubectl get pods -o json  
-kubectl get pods -o ymal 
+kubectl get pods -o yaml 
 ```
 
 ## Filter results by a label.
@@ -25,7 +27,7 @@ kubectl describe pod my-pod
 
 ## Execute a command inside a pod
 ```
-kubectl exec my-pod -c busybox --echo "hello world"   
+kubectl exec my-pod -c busybox -- echo "hello world"   
 ```
 
 ## Delete a  pod
