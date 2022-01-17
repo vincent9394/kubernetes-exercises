@@ -1,6 +1,6 @@
 ## Create cluster with the config.yml
 kind create cluster --config=config.yml
-
+git
 ## Kube create deployment
 ## Kube save the yaml file
 ```
@@ -32,4 +32,9 @@ kubectl scale deployment my-deployment04-1 --replicas=5
 ## see the replicas
 ```
 kubectl describe deployment my-deployment04-1
+```
+
+## Delete a deployment
+```
+kubectl delete deployment my-deployment04-1    
 ```
