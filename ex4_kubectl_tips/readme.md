@@ -1,6 +1,6 @@
 ## Create cluster with the config.yml
 kind create cluster --config=config.yml
-git
+
 ## Kube create deployment
 ## Kube save the yaml file
 ```
