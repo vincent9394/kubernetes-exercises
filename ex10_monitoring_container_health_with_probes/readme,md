@@ -1,0 +1,32 @@
+
+## Create pod
+```
+kubectl create -f liveness-pod.yml
+kubectl create -f liveness-pod-http.yml
+kubectl create -f startup-pod.yml
+kubectl create -f readiness-pod.yml
+```
+
+## check the pod
+```
+kubectl get pod liveness-pod
+kubectl get pod liveness-pod-http
+kubectl get pod startup-pod
+kubectl get pod readiness-pod
+```
+
+
+## Use the liveness pod http to execute the index.html 
+```
+kubectl exec -it liveness-pod-http -- rm -f /usr/share/nginx/html/index.html
+```
+
+``` 
+watch -n1 kubectl get po
+```
+
+## Reference
+https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/
+Pending -> Running -> Succeeded -> Failed -> Unknown 
+
+https://jimmysong.io/kubernetes-handbook/guide/configure-liveness-readiness-probes.html
