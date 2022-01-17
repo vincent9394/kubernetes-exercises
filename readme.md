@@ -33,6 +33,20 @@ kubectl get pods -o wide
 kubectl get pods -o json  
 kubectl get pods -o yaml
 kubectl describe pod my-pod
+kubectl delete namespace
+kubectl delete nodes
+kubectl delete pods 
+```
+
+## shortnames form command
+```
+kubectl api-resources
+```
+```
+kubectl get sa //serviceaccount
+kubectl get po //pods
+kubectl get ns  //namesapce
+kubectl get no //node
 ```
 
 # Reference:
