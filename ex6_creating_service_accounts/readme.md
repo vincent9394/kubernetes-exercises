@@ -26,7 +26,8 @@ kubectl create -f sa-pod-reader.yml
 
 ## delete the Service Account 
 ```
-kubectl delete serviceaccount my-serviceaccount2
+kubectl delete serviceaccount my-serviceaccount
+kubectl delete sa my-serviceaccount2
 ```
 
 ## short form
