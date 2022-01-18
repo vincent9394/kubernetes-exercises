@@ -1,3 +1,7 @@
+## Create cluster with the config.yml
+```
+kind create cluster --config=config.yml
+```
 
 ## Create a pod with resource requests that exceed aviable node resources.
 ```

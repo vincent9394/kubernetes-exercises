@@ -1,3 +1,7 @@
+## Create cluster with the config.yml
+```
+kind create cluster --config=config.yml
+```
 
 ## apply from the web
 ```
@@ -33,8 +37,6 @@ kubectl top pod
 W1122 10:41:57.632230   38445 top_pod.go:140] Using json format to get metrics. Next release will switch to protocol-buffers, switch early by passing --use-protocol-buffers flag
 Error from server (ServiceUnavailable): the server is currently unable to handle the request (get pods.metrics.k8s.io)
 ```
-
-
 
 ## Type the follow command
 ```
